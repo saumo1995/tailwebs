@@ -23,7 +23,7 @@ class LoginController extends Controller
         // Attempt to log the user in
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->route('dashboard');
+            return redirect()->route('listing');
         } else {
             // Authentication failed...
             return redirect()->back()->withErrors(

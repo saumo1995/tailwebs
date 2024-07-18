@@ -20,9 +20,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/add', [StudentController::class, 'addStudentData'])->name('student.add');
     Route::post('/getstudentData',[StudentController::class, 'getstudentData'])->name('student.data');
-
-
-
+    Route::post('/deleteStudentData',[StudentController::class, 'deleteStudentData'])->name('student.delete');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 });
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
