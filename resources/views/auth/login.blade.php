@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+     section {
+            height:100vh;
+            width: 100vw;
+        }
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>tailwebs</title>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -16,7 +22,9 @@
         <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
           <div class="card border border-light-subtle rounded-3 shadow-sm">
             <div class="card-body p-3 p-md-4 p-xl-5">
-              <h2 class="fs-3 fw-normal text-center text-secondary mb-4"><font color="red">tailwebs</font></h2>
+              <h2 class="fs-3 fw-normal text-center text-secondary mb-4">
+                <img src="{{ URL::to('/') }}/tailwebs.png" width="100" height="auto" alt="" srcset="">
+              </h2>
               <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="row gy-2 overflow-hidden">

@@ -20,7 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>tailwebs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
@@ -63,9 +63,7 @@
                                         <a class="dropdown-item" href="javascript:void(0)" onclick="fetchData('<?= base64_encode($row->id)?>')">Edit</a> 
                                         <a class="dropdown-item" href="javascript:void(0)" onclick="deleteStudent('<?= base64_encode($row->id)?>')">Delete</a> 
                                     </div>
-                                  </div>
-                                {{-- <a href="javascript:void(0)" onclick="fetchData('<?= base64_encode($row->id)?>')">Edit</a> 
-                                || <a href="javascript:void(0)" onclick="deleteStudent('<?= base64_encode($row->id)?>')">Delete</a>  --}}
+                                </div>                     
                                 
                             </td>
                         </tr>
