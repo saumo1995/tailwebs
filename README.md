@@ -23,3 +23,6 @@
     6. php artisan storgae:link
  5. After run above command , to run this project by this command :
     php artisan serve
+ 6. Login Credentials:
+    Emails : teacher@tailwebs.com
+    Password : 123456
